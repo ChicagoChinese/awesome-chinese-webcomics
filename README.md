@@ -4,4 +4,3 @@ This is a list of high-quality webcomics that are available in Chinese. "Quality
 
 - [Pepper & Carrot](https://www.peppercarrot.com/cn/static3/webcomics) - simplified, [first page](https://www.peppercarrot.com/cn/article234/potion-of-flight)
 - [The Wormworld Saga](https://www.wormworldsaga.com/) - simplified, [first page](https://www.wormworldsaga.com/chapters/chapter01/cn/)
-- [Chinese Superman]()
