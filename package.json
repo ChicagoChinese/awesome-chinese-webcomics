@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "author": "feihong",
   "license": "MIT",
-  "scripts": {
-    "generate": "node generate.js"
-  },
   "dependencies": {
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
@@ -15,5 +12,12 @@
     "isomorphic-fetch": "^2.2.1",
     "react": "^16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "generate": "node generate.js"
   }
 }

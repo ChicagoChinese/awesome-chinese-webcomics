@@ -6,7 +6,7 @@ require('@babel/register')({
 })
 const React = require('react')
 const ReactDOMServer = require('react-dom/server')
-const App = require('./src/App.jsx')
+const App = require('./src/App.js')
 
 const csvFile = 'webcomics.csv'
 const url = 'https://docs.google.com/spreadsheets/d/1VFy6jdPbRjZiQJ2a0fn9eFnAcrQh5ebSh21tTihKeKA/export?format=csv'
