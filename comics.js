@@ -7,11 +7,11 @@ const url = 'https://docs.google.com/spreadsheets/d/1VFy6jdPbRjZiQJ2a0fn9eFnAcrQ
 
 function main() {
   fetch(url)
-  .then(response => response.text())
-  .then(text => {
-    fetchComics(text)
-    console.log(getComics())
-  })
+    .then(response => response.text())
+    .then(text => {
+      fetchComics(text)
+      console.log(getComics())
+    })
 }
 
 function fetchComics(text) {
@@ -28,14 +28,21 @@ function getComics() {
   let text = fs.readFileSync(csvFile, 'utf8')
   let lines = text.split('\n')
   lines[0] = lines[0].toLowerCase().replace(/ /g, '_')
-  let comics = parse(lines.join('\n'), {columns: true})
+  let comics = parse(lines.join('\n'), { columns: true })
   comics.forEach(comic => {
     comic.genres = comic.genres.split(',').map(s => s.trim())
   })
-  return comics
+
+  let lastUpdated = fs.statSync(csvFile).mtime.toLocaleDateString()
+
+  let genres = new Set(comics.map(c => c.genres).flat())
+  genres = Array.from(genres)
+  genres.sort()
+
+  return { comics, lastUpdated, genres }
 }
 
-module.exports = {getComics}
+module.exports = { getComics }
 
 if (require.main === module) {
   main()

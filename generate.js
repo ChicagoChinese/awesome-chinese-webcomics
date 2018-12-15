@@ -1,5 +1,5 @@
 const fs = require('fs')
-const {getComics} = require('./comics')
+const { getComics } = require('./comics')
 require('@babel/register')({
   presets: ["@babel/preset-env", "@babel/preset-react"],
 })
@@ -8,15 +8,16 @@ const ReactDOMServer = require('react-dom/server')
 const App = require('./src/App.js')
 
 function main() {
-  let comics = getComics()
-  let elem = React.createElement(App, {comics}, null)
+  let data = getComics()
+  let { comics, genres, lastUpdated } = data
+  let elem = React.createElement(App, { comics, genres, lastUpdated }, null)
   let content = ReactDOMServer.renderToString(elem)
-  let html = getHtml(content)
+  let html = getHtml(content, data)
   fs.writeFileSync('index.html', html, 'utf8')
   console.log('Generated index.html')
 }
 
-function getHtml(content) {
+function getHtml(content, data) {
   return `<!DOCTYPE html>
 <html>
 <head>
@@ -32,6 +33,9 @@ function getHtml(content) {
 </head>
 <body>
   <div id="index">${content}</div>
+  <script>
+    window.__INITIAL_STATE__ = ${JSON.stringify(data)};
+  </script>
   <script src="./src/index.js"></script>
 </body>
 </html>
