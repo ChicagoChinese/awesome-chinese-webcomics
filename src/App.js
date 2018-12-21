@@ -16,6 +16,17 @@ function Select({ initValue, options, onChange }) {
   )
 }
 
+function filterCharSet(charSet, comic) {
+  if (charSet === 'all') {
+    return true
+  } else if (charSet === 'simplified' && comic.simplified_link) {
+    return true
+  } else if (charSet === 'traditional' && comic.traditional_link) {
+    return true
+  }
+  return false
+}
+
 function App({ comics, genres, lastUpdated }) {
   let [genre, setGenre] = useState('all')
   let [charSet, setCharSet] = useState('all')
@@ -48,7 +59,7 @@ function App({ comics, genres, lastUpdated }) {
         <thead>
           <tr>
             <th>Title</th>
-            <th>Character set</th>
+            <th>Links</th>
             <th>Genres</th>
             <th>Notes</th>
           </tr>
@@ -56,16 +67,19 @@ function App({ comics, genres, lastUpdated }) {
         <tbody>
           {comics
             .filter(comic => genre === 'all' ? true : comic.genres.includes(genre))
-            .filter(comic => charSet === 'all' ? true : comic.character_set === charSet)
+            .filter(comic => filterCharSet(charSet, comic))
             .map((comic, i) =>
               <tr className={i % 2 === 0 ? "bg-grey-lightest" : ""}
-                key={comic.link}>
+                key={comic.title}>
+                <td>{comic.title}</td>
                 <td>
-                  <a href={comic.link} target="_blank">
-                    {comic.title}
-                  </a>
+                  {comic.simplified_link &&
+                    <a href={comic.simplified_link} target="_blank" className="mr-4">simplified</a>
+                  }
+                  {comic.traditional_link &&
+                    <a href={comic.traditional_link} target="_blank">traditional</a>
+                  }
                 </td>
-                <td>{comic.character_set}</td>
                 <td>{comic.genres.join(', ')}</td>
                 <td>{comic.notes}</td>
               </tr>

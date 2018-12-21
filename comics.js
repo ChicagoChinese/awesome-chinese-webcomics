@@ -30,7 +30,11 @@ function getComics() {
   lines[0] = lines[0].toLowerCase().replace(/ /g, '_')
   let comics = parse(lines.join('\n'), { columns: true })
   comics.forEach(comic => {
-    comic.genres = comic.genres.split(',').map(s => s.trim())
+    comic.genres =
+      comic.genres
+      .split(',')
+      .map(s => s.trim())
+      .filter(s => s !== "")
   })
 
   let lastUpdated = fs.statSync(csvFile).mtime.toLocaleDateString()
