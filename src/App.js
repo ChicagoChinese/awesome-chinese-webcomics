@@ -7,7 +7,7 @@ function Select({ initValue, options, onChange }) {
   let [value, setValue] = useState(initValue)
 
   return (
-    <select value={value} onChange={evt => {
+    <select className="border mr-4" value={value} onChange={evt => {
       onChange(evt.target.value)
       setValue(evt.target.value)
     }}>
@@ -40,7 +40,7 @@ function App({ comics, genres, lastUpdated }) {
       <div className="mb-4">Last updated: {lastUpdated}</div>
 
       <div className="mb-4">
-        <span>Character set:</span>
+        <span className="mr-2">Character set:</span>
         <Select
           initValue={genre}
           options={characterSets}
@@ -48,7 +48,7 @@ function App({ comics, genres, lastUpdated }) {
             console.log(val);
             setCharSet(val)
           }} />
-        <span>Genre:</span>
+        <span className="mr-2">Genre:</span>
         <Select
           initValue={charSet}
           options={genres}
