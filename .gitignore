@@ -2,3 +2,5 @@
 /.cache/
 /dist/
 yarn-error.log
+
+index.html
