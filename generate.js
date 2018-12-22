@@ -29,8 +29,8 @@ function main() {
 function addLinks(comic) {
   comic.links =
     [
-      comic.simplified_link ? `[simplified]($comic.simplified_link)` : '',
-      comic.traditional_link ? `[traditional]($comic.traditional_link)` : '',
+      comic.simplified_link ? `[simplified](${comic.simplified_link})` : '',
+      comic.traditional_link ? `[traditional](${comic.traditional_link})` : '',
     ]
     .filter(s => s !== '')
     .join(', ')
