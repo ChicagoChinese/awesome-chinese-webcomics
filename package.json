@@ -22,6 +22,7 @@
     "build": "parcel build index.html --public-url /awesome-chinese-webcomics",
     "deploy": "source deploy.sh",
     "generate": "node generate.js",
+    "generate-forum": "node generate-forum.js",
     "update": "node comics.js"
   }
 }

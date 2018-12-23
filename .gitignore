@@ -3,4 +3,5 @@
 /dist/
 yarn-error.log
 
-index.html
+/index.html
+/forum.html

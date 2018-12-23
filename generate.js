@@ -1,5 +1,5 @@
 const fs = require('fs')
-const { getComics } = require('./comics')
+const { getAwesomeComics } = require('./comics')
 require('@babel/register')({
   presets: ["@babel/preset-env", "@babel/preset-react"],
 })
@@ -9,7 +9,7 @@ const App = require('./src/App.js')
 const nunjucks = require('nunjucks')
 
 function main() {
-  let data = getComics()
+  let data = getAwesomeComics()
   let { comics, genres, lastUpdated } = data
 
   let elem = React.createElement(App, { comics, genres, lastUpdated }, null)
@@ -18,7 +18,7 @@ function main() {
   fs.writeFileSync('index.html', html, 'utf8')
   console.log('Generated index.html')
 
-  nunjucks.configure('.', {autoescape: false})
+  nunjucks.configure('templates', {autoescape: false})
   html = nunjucks.render('README_template.md', {
     comics: comics.map(addLinks)
   })
@@ -38,6 +38,7 @@ function addLinks(comic) {
 }
 
 function getHtml(content, data) {
+  data = JSON.stringify(data)
   return `<!DOCTYPE html>
 <html>
 <head>
@@ -56,7 +57,7 @@ function getHtml(content, data) {
 <body>
   <div id="index">${content}</div>
   <script>
-    window.__INITIAL_STATE__ = ${JSON.stringify(data)};
+    window.__INITIAL_STATE__ = ${data};
   </script>
   <script src="./src/index.js"></script>
 </body>

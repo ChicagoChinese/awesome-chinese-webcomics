@@ -1,0 +1,18 @@
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+{% for comic in comics %}
+  {{ loop.index }}.
+  {{ comic.titles | join(' / ') }}
+  [
+  {% for title, link in comic.links %}
+    <a href={{ link }}>{{ title }}</a>
+  {% endfor %}
+  ]
+  {% if comic.genres| length %}- {{ comic.genres | join(', ') }}{% endif %}
+  <br>
+{% endfor %}
+</body>
+</html>

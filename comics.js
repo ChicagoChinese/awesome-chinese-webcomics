@@ -61,7 +61,7 @@ function getBilingualComics() {
   return getComics(bilingualFile)
 }
 
-module.exports = { getComics }
+module.exports = { getAwesomeComics, getBilingualComics }
 
 if (require.main === module) {
   main()
