@@ -3,16 +3,18 @@
   <meta charset="utf-8">
 </head>
 <body>
+<ol>
 {% for comic in comics %}
-  {{ loop.index }}.
+  <li>
   {{ comic.titles | join(' / ') }}
   [
   {% for title, link in comic.links %}
     <a href={{ link }}>{{ title }}</a>
   {% endfor %}
   ]
-  {% if comic.genres| length %}- {{ comic.genres | join(', ') }}{% endif %}
-  <br>
+  - {{ comic.genres | join(', ') }}
+  </li>
 {% endfor %}
+</ol>
 </body>
 </html>
