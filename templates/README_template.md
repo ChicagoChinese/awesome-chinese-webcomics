@@ -5,8 +5,8 @@ This is a curated list of Chinese webcomics for language learners.
 ## List
 
 {% for comic in comics %}
-  {{- comic.title }} [ {{ comic.links }} ] - {{ comic.genres | join(", ")}} ({{ comic.difficulty }})
-{% endfor %}
+* {{ comic.title }} [ {{ comic.links }} ] - {{ comic.genres | join(", ")}} ({{ comic.difficulty }})
+{%- endfor %}
 
 ## Criteria for consideration
 
@@ -39,4 +39,4 @@ Expert - Text contains a lot of technical jargon or classical Chinese
 
 ## Spreadsheet
 
-This page is generated from a [public spreadsheet].(https://docs.google.com/spreadsheets/d/1VFy6jdPbRjZiQJ2a0fn9eFnAcrQh5ebSh21tTihKeKA/)
+This page is generated from a [public spreadsheet](https://docs.google.com/spreadsheets/d/1VFy6jdPbRjZiQJ2a0fn9eFnAcrQh5ebSh21tTihKeKA/).
