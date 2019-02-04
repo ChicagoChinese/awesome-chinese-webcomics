@@ -18,7 +18,7 @@ function main() {
   fs.writeFileSync('index.html', html, 'utf8')
   console.log('Generated index.html')
 
-  nunjucks.configure('templates', {autoescape: false})
+  nunjucks.configure('templates', { autoescape: false })
   html = nunjucks.render('README_template.md', {
     comics: comics.map(addLinks)
   })
@@ -31,9 +31,10 @@ function addLinks(comic) {
     [
       comic.simplified_link ? `[simplified](${comic.simplified_link})` : '',
       comic.traditional_link ? `[traditional](${comic.traditional_link})` : '',
+      comic.english_link ? `[english](${comic.english_link})` : '',
     ]
-    .filter(s => s !== '')
-    .join(', ')
+      .filter(s => s !== '')
+      .join(', ')
   return comic
 }
 
