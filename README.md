@@ -16,6 +16,7 @@ This is a curated list of Chinese webcomics for language learners.
 * 我的panda男友 [ [simplified](http://m.kuaikanmanhua.com/mobile/159/list/) ] - romance, comedy, slice-of-life
 * 死格：死亡的声音 [ [traditional](https://m.ac.qq.com/comic/chapterList/id/552409) ] - four-panel, horror
 * 我的傻大个男友 [ [simplified](http://m.dongmanmanhua.cn/LOVE/shadage/list?title_no=1115), [english](https://m.webtoons.com/en/slice-of-life/my-giant-nerd-boyfriend/list?title_no=958) ] - comedy, romance, slice-of-life
+* 柔美的細胞小將 [ [traditional](https://www.webtoons.com/zh-hant/slice-of-life/yumi-cell/list?title_no=461), [english](https://www.webtoons.com/en/romance/yumi-cell/list?title_no=478&page=1) ] - slice-of-life, comedy
 
 ## Advanced
 
@@ -33,7 +34,6 @@ This is a curated list of Chinese webcomics for language learners.
 * MOONYOU-独行月球 [ [simplified](http://m.dongmanmanhua.cn/HEALING/moonyou/list?title_no=697), [traditional](https://m.webtoons.com/zh-hant/comedy/moonyou/list?title_no=696), [english](https://m.webtoons.com/en/sf/moonyou/list?title_no=1340) ] - sci-fi, comedy
 * 谷围南亭 [ [simplified](http://m.kuaikanmanhua.com/mobile/2625/list/) ] - fantasy, action
 * W [ [traditional](http://www.comico.com.tw/45/) ] - fantasy, action
-* 柔美的細胞小將 [ [traditional](https://www.webtoons.com/zh-hant/slice-of-life/yumi-cell/list?title_no=461) ] - slice-of-life, comedy
 * 天下第几 [ [simplified](http://m.kuaikanmanhua.com/mobile/472/list/) ] - action, romance
 
 ## Expert
