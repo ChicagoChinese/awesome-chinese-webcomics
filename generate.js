@@ -20,10 +20,18 @@ function main() {
 
   nunjucks.configure('templates', { autoescape: false })
   html = nunjucks.render('README_template.md', {
-    comics: comics.map(addLinks)
+    groups: groupByDifficulty(comics.map(addLinks))
   })
   fs.writeFileSync('README.md', html, 'utf8')
   console.log('Generated README.md')
+}
+
+function groupByDifficulty(comics) {
+  return ['beginner', 'intermediate', 'advanced', 'expert'].map(difficulty => {
+    let name = capitalize(difficulty)
+    let items = comics.filter(c => c.difficulty === difficulty)
+    return [name, items]
+  })
 }
 
 function addLinks(comic) {
@@ -64,6 +72,10 @@ function getHtml(content, data) {
 </body>
 </html>
   `
+}
+
+function capitalize(s) {
+  return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
 main()

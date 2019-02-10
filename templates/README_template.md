@@ -2,11 +2,13 @@
 
 This is a curated list of Chinese webcomics for language learners.
 
-## List
+{% for difficulty, comics in groups %}
+## {{ difficulty }}
 
-{% for comic in comics %}
-* {{ comic.title }} [ {{ comic.links }} ] - {{ comic.genres | join(", ")}} ({{ comic.difficulty }})
-{%- endfor %}
+  {% for comic in comics %}
+* {{ comic.title }} [ {{ comic.links }} ] - {{ comic.genres | join(", ")}}
+  {%- endfor %}
+{% endfor %}
 
 ## Criteria for consideration
 
@@ -25,7 +27,7 @@ Some things will disqualify a comic from being considered for this list:
 - Speech bubbles are consistently illegible, e.g. text is very small or font is highly stylized
 - Most chapters are behind a paywall. If it’s possible to read chapters at a slower pace for free, that’s acceptable (e.g. reading tokens that replenish after 24 hours).
 
-## Difficulty assessment
+## Assessing difficulty
 
 We assign a difficulty of beginner, intermediate, advanced, and expert to each comic on the list. Here is how we define these ratings:
 
