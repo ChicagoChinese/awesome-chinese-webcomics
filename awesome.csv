@@ -1,25 +1,38 @@
-Title,Genres,Difficulty,Simplified link,Traditional link,English link,Notes
-Pepper & Carrot,"fantasy, comedy, slice-of-life",intermediate,https://www.peppercarrot.com/cn/static3/webcomics,,https://www.peppercarrot.com/,
-魔女,"supernatural, mystery, thriller",advanced,http://m.kuaikanmanhua.com/mobile/1154/list/,,,
-照明商店,"horror, mystery, thriller",advanced,http://m.kuaikanmanhua.com/mobile/1004/list/,,,
-我的panda男友,"romance, comedy, slice-of-life",intermediate,http://m.kuaikanmanhua.com/mobile/159/list/,,,"First chapter is a bit illegible, but from second chapter on it's fine"
-二四八月常晴偶雨,"gender confusion, romance",advanced,http://m.kuaikanmanhua.com/mobile/772/list/,,,
-亲爱的L,"lesbian, romance",advanced,http://m.kuaikanmanhua.com/mobile/1022/list/,,,
-山海戮,"fantasy, wuxia, action",expert,https://m.dongmanmanhua.cn/FANTASY/shanhailu/list?title_no=1319,,,
-高手,"wuxia, comedy",advanced,https://m.dongmanmanhua.cn/BOY/gaoshou/list?title_no=764,,,
-奇人錄,"fantasy, historical",advanced,,http://www.comico.com.tw/814/,,"To read past chapter 20, you must use register and use reading tokens that refresh after 24 hours"
-死格：死亡的声音,"four-panel, horror",intermediate,,https://m.ac.qq.com/comic/chapterList/id/552409,,
-猫猫虫咖波,"comedy, slice-of-life",beginner,https://www.dongmanmanhua.cn/HEALING/maomaochongkapo/list?title_no=807,https://www.webtoons.com/zh-hant/comedy/maomaochongkapo/list?title_no=394,,Only text is in the episode titles
-深淵的天空,"sci-fi, horror, thriller",advanced,,https://m.webtoons.com/zh-hant/thriller/distant-sky/list?title_no=161,https://m.webtoons.com/en/thriller/distant-sky/list?title_no=75,
-课堂中的她,romance,advanced,http://m.dongmanmanhua.cn/CAMPUS/the-girl-from-class/list?title_no=239,https://m.webtoons.com/zh-hant/drama/the-girl-from-class/list?title_no=159,https://m.webtoons.com/en/drama/the-girl-from-class/list?title_no=73,
-与鬼魂同居,"supernatural, romance",advanced,http://m.dongmanmanhua.cn/FANTASY/yuguihuntongju/list?title_no=714,https://m.webtoons.com/zh-hant/drama/yinxingdetongju/list?title_no=713,https://m.webtoons.com/en/drama/my-boo/list?title_no=1185,
-非人哉,"fantasy, four-panel, comedy",advanced,http://m.kuaikanmanhua.com/mobile/531/list/,,,
-MOONYOU-独行月球,"sci-fi, comedy",advanced,http://m.dongmanmanhua.cn/HEALING/moonyou/list?title_no=697,https://m.webtoons.com/zh-hant/comedy/moonyou/list?title_no=696,https://m.webtoons.com/en/sf/moonyou/list?title_no=1340,
-我的傻大个男友,"comedy, romance, slice-of-life",intermediate,http://m.dongmanmanhua.cn/LOVE/shadage/list?title_no=1115,,https://m.webtoons.com/en/slice-of-life/my-giant-nerd-boyfriend/list?title_no=958,"Minimal text, but font can be too cartoony at times"
-谷围南亭,"fantasy, action",advanced,http://m.kuaikanmanhua.com/mobile/2625/list/,,,
-W,"fantasy, action",advanced,,http://www.comico.com.tw/45/,,
-黑色放映机,horror,beginner,,https://www.webtoons.com/zh-hant/horror/heisefangyingji/list?title_no=416,,"Earlier episodes have some dialogue, but most episodes have no text except in the titles"
-柔美的細胞小將,"slice-of-life, comedy",intermediate,,https://www.webtoons.com/zh-hant/slice-of-life/yumi-cell/list?title_no=461,https://www.webtoons.com/en/romance/yumi-cell/list?title_no=478&page=1,
-拾遗录,historical,expert,http://m.kuaikanmanhua.com/mobile/1538/list/,,,
-步天歌,"fantasy, historical",expert,http://m.kuaikanmanhua.com/mobile/2583/list/,,,
-天下第几,"action, romance",advanced,http://m.kuaikanmanhua.com/mobile/472/list/,,,
+Title,Genres,Tags,Difficulty,Simplified link,Traditional link,English link,Notes
+Pepper & Carrot,"fantasy, comedy, slice-of-life",all-ages,intermediate,https://www.peppercarrot.com/cn/static3/webcomics,,https://www.peppercarrot.com/,
+魔女,"mystery, thriller","supernatural, statistics",advanced,http://m.kuaikanmanhua.com/mobile/1154/list/,,,
+照明商店,"horror, mystery, thriller",,advanced,http://m.kuaikanmanhua.com/mobile/1004/list/,,,
+我的panda男友,"romance, comedy, slice-of-life",panda,intermediate,http://m.kuaikanmanhua.com/mobile/159/list/,,,"First chapter is a bit illegible, but from second chapter on it's fine"
+二四八月常晴偶雨,"romance, comedy","gender confusion, hospital",advanced,http://m.kuaikanmanhua.com/mobile/772/list/,,,
+亲爱的L,"romance, drama",lesbian,advanced,http://m.kuaikanmanhua.com/mobile/1022/list/,,,
+山海戮,"fantasy, wuxia",gufeng,expert,https://m.dongmanmanhua.cn/FANTASY/shanhailu/list?title_no=1319,,,
+高手,"wuxia, comedy",gufeng,advanced,https://m.dongmanmanhua.cn/BOY/gaoshou/list?title_no=764,,,
+奇人錄,"fantasy, drama",gufeng,advanced,,http://www.comico.com.tw/814/,,"To read past chapter 20, you must use register and use reading tokens that refresh after 24 hours"
+死格：死亡的声音,"four-panel, horror",episodic,intermediate,,https://m.ac.qq.com/comic/chapterList/id/552409,,
+猫猫虫咖波,"comedy, slice-of-life","wordless, episodic, all-ages",beginner,https://www.dongmanmanhua.cn/HEALING/maomaochongkapo/list?title_no=807,https://www.webtoons.com/zh-hant/comedy/maomaochongkapo/list?title_no=394,,Only text is in the episode titles
+深淵的天空,"sci-fi, horror, thriller",post-apocalyptic,advanced,,https://m.webtoons.com/zh-hant/thriller/distant-sky/list?title_no=161,https://m.webtoons.com/en/thriller/distant-sky/list?title_no=75,
+课堂中的她,romance,college,advanced,http://m.dongmanmanhua.cn/CAMPUS/the-girl-from-class/list?title_no=239,https://m.webtoons.com/zh-hant/drama/the-girl-from-class/list?title_no=159,https://m.webtoons.com/en/drama/the-girl-from-class/list?title_no=73,
+与鬼魂同居,"supernatural, romance",ghost,advanced,http://m.dongmanmanhua.cn/FANTASY/yuguihuntongju/list?title_no=714,https://m.webtoons.com/zh-hant/drama/yinxingdetongju/list?title_no=713,https://m.webtoons.com/en/drama/my-boo/list?title_no=1185,
+非人哉,"fantasy, four-panel, comedy",mythology,advanced,http://m.kuaikanmanhua.com/mobile/531/list/,,,
+MOONYOU-独行月球,"sci-fi, comedy",space,advanced,http://m.dongmanmanhua.cn/HEALING/moonyou/list?title_no=697,https://m.webtoons.com/zh-hant/comedy/moonyou/list?title_no=696,https://m.webtoons.com/en/sf/moonyou/list?title_no=1340,Text can be small at times
+我的傻大个男友,"comedy, romance, slice-of-life",,intermediate,http://m.dongmanmanhua.cn/LOVE/shadage/list?title_no=1115,,https://m.webtoons.com/en/slice-of-life/my-giant-nerd-boyfriend/list?title_no=958,"Minimal text, but font can be too cartoony at times"
+W,"fantasy, action",,advanced,,http://www.comico.com.tw/45/,,
+黑色放映机,"horror, comedy","wordless, episodic",beginner,https://m.dongmanmanhua.cn/SUSPENSE/heisefangyingji/list?title_no=804,https://www.webtoons.com/zh-hant/horror/heisefangyingji/list?title_no=416,,Episodes without dialogue are beginner; episodes with dialogue are maybe intermediate
+柔美的細胞小將,"slice-of-life, comedy",,intermediate,,https://www.webtoons.com/zh-hant/slice-of-life/yumi-cell/list?title_no=461,https://www.webtoons.com/en/romance/yumi-cell/list?title_no=478&page=1,
+拾遗录,drama,"gufeng, anthology",expert,http://m.kuaikanmanhua.com/mobile/1538/list/,,,
+步天歌,"fantasy, wuxia",gufeng,expert,http://m.kuaikanmanhua.com/mobile/2583/list/,,,
+天下第几,"action, romance",,advanced,http://m.kuaikanmanhua.com/mobile/472/list/,,,
+人面花,"sci-fi, thriller",biology,advanced,,http://www.comico.com.tw/3535/,,
+台北不來悔,comedy,entrepeneurship,advanced,,http://www.comico.com.tw/125/,,
+難道長得不帥就只能當個好人嗎？,comedy,"assassin, military, high school",advanced,,http://www.comico.com.tw/1176/,,
+人面花,"sci-fi, thriller",biology,advanced,,http://www.comico.com.tw/3535/,,
+Baski,"sci-fi, thriller",superpowers,advanced,,http://www.comico.com.tw/1374/,,
+我的手作日记,slice-of-life,crafts,advanced,,https://www.webtoons.com/zh-hant/slice-of-life/wodeshouzuoriji/list?title_no=805,,
+羽影,drama,"sports, badminton",advanced,http://m.kuaikanmanhua.com/mobile/3131/list,,,
+冰花绽放,drama,"sports, figure skating",advanced,http://m.kuaikanmanhua.com/mobile/2651/list/,,,
+第二模式,thriller,superpowers,advanced,http://m.kuaikanmanhua.com/mobile/1505/list/,,,
+一代灵后,drama,"supernatural, gufeng",advanced,http://m.kuaikanmanhua.com/mobile/1877/list/,,,
+0秒起跑,drama,"sports, track and field",advanced,http://m.kuaikanmanhua.com/mobile/2162/list/,,,
+人类进化论,horror,anthology,advanced,http://m.kuaikanmanhua.com/mobile/1135/list/,,,
+绝顶,"comedy, wuxia",gufeng,advanced,https://m.dongmanmanhua.cn/BOY/jueding/list?title_no=1331,,,
+撩汉小能手,"romance, comedy",photocomic,advanced,https://m.ac.qq.com/comic/index/id/631910,,,
