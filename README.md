@@ -6,15 +6,15 @@ This is a curated list of Chinese webcomics for language learners.
 ## Beginner
 
   
-* 猫猫虫咖波 [ [simplified](https://www.dongmanmanhua.cn/HEALING/maomaochongkapo/list?title_no=807), [traditional](https://www.webtoons.com/zh-hant/comedy/maomaochongkapo/list?title_no=394) ] - comedy, slice-of-life
 * 黑色放映机 [ [simplified](https://m.dongmanmanhua.cn/SUSPENSE/heisefangyingji/list?title_no=804), [traditional](https://www.webtoons.com/zh-hant/horror/heisefangyingji/list?title_no=416) ] - horror, comedy
+* 猫猫虫咖波 [ [simplified](https://www.dongmanmanhua.cn/HEALING/maomaochongkapo/list?title_no=807), [traditional](https://www.webtoons.com/zh-hant/comedy/maomaochongkapo/list?title_no=394) ] - comedy, slice-of-life
 
 ## Intermediate
 
   
 * Pepper & Carrot [ [simplified](https://www.peppercarrot.com/cn/static3/webcomics), [english](https://www.peppercarrot.com/) ] - fantasy, comedy, slice-of-life
 * 我的panda男友 [ [simplified](http://m.kuaikanmanhua.com/mobile/159/list/) ] - romance, comedy, slice-of-life
-* 死格：死亡的声音 [ [traditional](https://m.ac.qq.com/comic/chapterList/id/552409) ] - four-panel, horror
+* 死格：死亡的声音 [ [simplified](https://m.ac.qq.com/comic/chapterList/id/552409) ] - four-panel, horror
 * 我的傻大个男友 [ [simplified](http://m.dongmanmanhua.cn/LOVE/shadage/list?title_no=1115), [english](https://m.webtoons.com/en/slice-of-life/my-giant-nerd-boyfriend/list?title_no=958) ] - comedy, romance, slice-of-life
 * 柔美的細胞小將 [ [traditional](https://www.webtoons.com/zh-hant/slice-of-life/yumi-cell/list?title_no=461), [english](https://www.webtoons.com/en/romance/yumi-cell/list?title_no=478&page=1) ] - slice-of-life, comedy
 
@@ -26,6 +26,7 @@ This is a curated list of Chinese webcomics for language learners.
 * 二四八月常晴偶雨 [ [simplified](http://m.kuaikanmanhua.com/mobile/772/list/) ] - romance, comedy
 * 亲爱的L [ [simplified](http://m.kuaikanmanhua.com/mobile/1022/list/) ] - romance, drama
 * 高手 [ [simplified](https://m.dongmanmanhua.cn/BOY/gaoshou/list?title_no=764) ] - wuxia, comedy
+* 绝顶 [ [simplified](https://m.dongmanmanhua.cn/BOY/jueding/list?title_no=1331) ] - comedy, wuxia
 * 奇人錄 [ [traditional](http://www.comico.com.tw/814/) ] - fantasy, drama
 * 深淵的天空 [ [traditional](https://m.webtoons.com/zh-hant/thriller/distant-sky/list?title_no=161), [english](https://m.webtoons.com/en/thriller/distant-sky/list?title_no=75) ] - sci-fi, horror, thriller
 * 课堂中的她 [ [simplified](http://m.dongmanmanhua.cn/CAMPUS/the-girl-from-class/list?title_no=239), [traditional](https://m.webtoons.com/zh-hant/drama/the-girl-from-class/list?title_no=159), [english](https://m.webtoons.com/en/drama/the-girl-from-class/list?title_no=73) ] - romance
@@ -46,8 +47,8 @@ This is a curated list of Chinese webcomics for language learners.
 * 一代灵后 [ [simplified](http://m.kuaikanmanhua.com/mobile/1877/list/) ] - drama
 * 0秒起跑 [ [simplified](http://m.kuaikanmanhua.com/mobile/2162/list/) ] - drama
 * 人类进化论 [ [simplified](http://m.kuaikanmanhua.com/mobile/1135/list/) ] - horror
-* 绝顶 [ [simplified](https://m.dongmanmanhua.cn/BOY/jueding/list?title_no=1331) ] - comedy, wuxia
 * 撩汉小能手 [ [simplified](https://m.ac.qq.com/comic/index/id/631910) ] - romance, comedy
+* 名剑 [ [simplified](https://www.kuaikanmanhua.com/web/topic/2821/) ] - action, wuxia
 
 ## Expert
 
@@ -55,6 +56,7 @@ This is a curated list of Chinese webcomics for language learners.
 * 山海戮 [ [simplified](https://m.dongmanmanhua.cn/FANTASY/shanhailu/list?title_no=1319) ] - fantasy, wuxia
 * 拾遗录 [ [simplified](http://m.kuaikanmanhua.com/mobile/1538/list/) ] - drama
 * 步天歌 [ [simplified](http://m.kuaikanmanhua.com/mobile/2583/list/) ] - fantasy, wuxia
+* 太子追杀令 [ [simplified](https://www.kuaikanmanhua.com/preview/web/topic/3495) ] - comey, wuxia
 
 
 ## Criteria for consideration

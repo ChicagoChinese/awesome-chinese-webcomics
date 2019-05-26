@@ -1,5 +1,5 @@
 const fs = require('fs')
-const { getAwesomeComics } = require('./comics')
+const { getComics } = require('./comics')
 require('@babel/register')({
   presets: ["@babel/preset-env", "@babel/preset-react"],
 })
@@ -9,21 +9,30 @@ const App = require('./src/App.js')
 const nunjucks = require('nunjucks')
 
 function main() {
-  let data = getAwesomeComics()
+  let data = getComics('awesome.csv')
   let { comics, genres, lastUpdated } = data
 
-  let elem = React.createElement(App, { comics, genres, lastUpdated }, null)
-  let content = ReactDOMServer.renderToString(elem)
-  let html = getHtml(content, data)
-  fs.writeFileSync('index.html', html, 'utf8')
-  console.log('Generated index.html')
+  // let elem = React.createElement(App, { comics, genres, lastUpdated }, null)
+  // let content = ReactDOMServer.renderToString(elem)
+  // let html = getHtml(content, data)
+  // fs.writeFileSync('index.html', html, 'utf8')
+  // console.log('Generated index.html')
 
   nunjucks.configure('templates', { autoescape: false })
-  html = nunjucks.render('README_template.md', {
+  let html = nunjucks.render('README_template.md', {
     groups: groupByDifficulty(comics.map(addLinks))
   })
-  fs.writeFileSync('README.md', html, 'utf8')
+  fs.writeFileSync('README.md', html)
   console.log('Generated README.md')
+
+  for (let theme of ['wuxia']) {
+    let data = getComics(theme + '.csv')
+    let { comics } = data
+    let html = nunjucks.render('theme_template.md', { title: capitalize(theme), comics: comics.map(addLinks) })
+    let outputFile = theme + '.md'
+    fs.writeFileSync(outputFile, html)
+    console.log(`Generated ${outputFile}`)
+  }
 }
 
 function groupByDifficulty(comics) {
