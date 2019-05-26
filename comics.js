@@ -2,15 +2,27 @@ require('isomorphic-fetch')
 const parse = require('csv-parse/lib/sync')
 const fs = require('fs')
 
-const awesomeFile = 'awesome.csv'
-const awesomeUrl = 'https://docs.google.com/spreadsheets/d/1VFy6jdPbRjZiQJ2a0fn9eFnAcrQh5ebSh21tTihKeKA/export?format=csv'
+const files = [
+  {
+    name: 'awesome.csv',
+    url: 'https://docs.google.com/spreadsheets/d/1VFy6jdPbRjZiQJ2a0fn9eFnAcrQh5ebSh21tTihKeKA/export?format=csv'
+  },
+  {
+    name: 'bilingual.csv',
+    url: 'https://docs.google.com/spreadsheets/u/1/d/1VFy6jdPbRjZiQJ2a0fn9eFnAcrQh5ebSh21tTihKeKA/export?format=csv&id=1VFy6jdPbRjZiQJ2a0fn9eFnAcrQh5ebSh21tTihKeKA&gid=1749138200'
+  },
+  {
+    name: 'wuxia.csv',
+    url: 'https://docs.google.com/spreadsheets/d/1VFy6jdPbRjZiQJ2a0fn9eFnAcrQh5ebSh21tTihKeKA/export?format=csv&id=1VFy6jdPbRjZiQJ2a0fn9eFnAcrQh5ebSh21tTihKeKA&gid=1663394683',
+  }
+]
 
-const bilingualFile = 'bilingual.csv'
-const bilingualUrl = 'https://docs.google.com/spreadsheets/u/1/d/1VFy6jdPbRjZiQJ2a0fn9eFnAcrQh5ebSh21tTihKeKA/export?format=csv&id=1VFy6jdPbRjZiQJ2a0fn9eFnAcrQh5ebSh21tTihKeKA&gid=1749138200'
+
 
 function main() {
-  fetchToFile(awesomeUrl, awesomeFile)
-  fetchToFile(bilingualUrl, bilingualFile)
+  for (const f of files) {
+    fetchToFile(f.url, f.name)
+  }
 }
 
 function fetchToFile(url, filename) {
@@ -39,9 +51,9 @@ function getComics(csvFile) {
   comics.forEach(comic => {
     comic.genres =
       comic.genres
-      .split(',')
-      .map(s => s.trim())
-      .filter(s => s !== "")
+        .split(',')
+        .map(s => s.trim())
+        .filter(s => s !== "")
   })
 
   let lastUpdated = fs.statSync(csvFile).mtime.toLocaleDateString()
@@ -53,15 +65,7 @@ function getComics(csvFile) {
   return { comics, lastUpdated, genres }
 }
 
-function getAwesomeComics() {
-  return getComics(awesomeFile)
-}
-
-function getBilingualComics() {
-  return getComics(bilingualFile)
-}
-
-module.exports = { getAwesomeComics, getBilingualComics }
+module.exports = { getComics }
 
 if (require.main === module) {
   main()
